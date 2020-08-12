@@ -207,6 +207,7 @@ body {
 }
 
 .app_wrap {
+    display: none;
     position: absolute;
     z-index: 999;
     top: 40px;
