@@ -1,6 +1,8 @@
 # 忽略所有 .a 结尾的文件
 #a
 
+readme.md
+
 # 但lib.a 除外
 #!lib.a
 
