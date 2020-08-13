@@ -178,20 +178,23 @@ body {
 /* 头部导航栏 */
 .header_nav {
     /* width: 1224px; */
+    width: 1120px;
     width: fit-content;
-    height: 21px;
-    line-height: 21px;
     text-align: center;
     padding-top: 12px;
-    margin: auto;
+    margin: 0 auto;
     font-size: 12px;
 }
 
 .header_nav ul {
     /* overflow: hidden; */
+    /* height: 100%; */
+    margin: 0 auto;
 }
 
 .header_nav ul li {
+    height: 32px;
+    line-height: 21px;
     float: left;
     position: relative;
 }
@@ -220,7 +223,6 @@ body {
     border-radius: 10px;
     border: 1px solid #ebebeb;
 }
-
 .app_wrap img {
     display: block;
     margin: 7px auto;
@@ -247,10 +249,11 @@ body {
 .main {
     width: 1220px;
     height: 1000px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 
+/* 定位红包 */
 .hb_img {
     position: fixed;
     z-index: 999;
