@@ -289,7 +289,9 @@ body {
     line-height: 74px;
     background-color: #fff;
     position: sticky;
+    z-index: 999;
     top: 0;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,.05);
 }
 .title{
     width: 1220px;
@@ -318,8 +320,8 @@ body {
 /* title_nav 二级菜单 */
 .title_nav_sec_container{
     display: none;
-    position: relative;
-    top: 0;
+    position: absolute;
+    /* top: 300; */
     width: 100%;
     background-color: #fff;
     z-index: 99;
@@ -370,7 +372,7 @@ body {
 }
 .title_search input{
     width: 130px;
-=}
+}
 .title_search a{
     display: inline-block;
     /* vertical-align: middle; */
@@ -391,15 +393,15 @@ body {
     border-color: #a7bb70;
     color: #a7bb70;
 }
-
-
-
-
-/* 主体内容区 */
-.main {
+/* TODO 主体内容区样式 */
+.main_wrap {
     width: 1220px;
-    height: 1000px;
+    height: max-content;
+    /* min-height: 1000px; */
     margin: 0 auto;
+    padding: 25px 0;
+    /* overflow: hidden; */
+    /* background-color: #0f0; */
 }
 
 
@@ -420,7 +422,7 @@ body {
     background-color: #fafafa;
     position: absolute;
     left: 0;
-    bottom: 0;
+    /* bottom: 0; */
     overflow: hidden;
 }
 
