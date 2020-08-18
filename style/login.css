@@ -1,0 +1,167 @@
+/* @import "login"; */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.login_bg {
+  width: 100%;
+  min-width: 460px;
+  height: 100%;
+  background: url('../img/login_bg.jpg') repeat;
+  background-size: cover;
+  padding-top: 5.5%;
+  overflow: hidden;
+  color: #999;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
+.login_wrap {
+  width: 370px;
+  height: 642px;
+  border: 1px solid #dadada;
+  margin: 0 auto;
+  padding: 0 40px;
+  border-radius: 10px;
+  background-color: #fbfbfb;
+  box-shadow: 0 9px 30px -6px rgba(0, 0, 0, .2), 0 18px 20px -10px rgba(0, 0, 0, .04), 0 18px 20px -10px rgba(0, 0, 0, .04), 0 10px 20px -10px rgba(0, 0, 0, .04);
+  overflow: hidden;
+}
+
+.login_wrap h1 {
+  padding: 60px 0 20px;
+  color: #333;
+  font-size: 18px;
+  text-align: center;
+}
+
+.login_wrap h1 img {
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.form_wrap {
+  /* background-color: #0f0; */
+}
+
+.form_wrap .line {
+  box-sizing: border-box;
+  width: 370px;
+  height: 48px;
+  border: 1px solid #dfdfdf;
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 46px;
+  margin-top: 15px;
+}
+
+.input_l {
+  float: left;
+  width: 46px;
+  height: 100%;
+  border-right: 1px solid #dfdfdf;
+  margin-right: 15px;
+  text-align: center;
+}
+
+.input_l img {
+  vertical-align: middle;
+}
+
+.line input {
+  height: 44px;
+  line-height: 44px;
+  vertical-align: middle;
+  /* text-indent: 1em; */
+  border: 0;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: #333;
+  font-size: 16px;
+}
+
+.line input:focus {
+  border: 0;
+}
+
+.input_r select {
+  float: right;
+  margin-right: 10px;
+  margin-top: 14px;
+  color: #999;
+  border: 0;
+  font-size: 14px;
+}
+
+a {
+  color: #5079d9;
+  text-decoration: none;
+}
+
+.extra_wrap {
+  margin: 15px 0;
+  /* background-color: #ccc; */
+  overflow: hidden;
+}
+
+.extra_wrap input {
+  border-radius: 50%;
+  background-color: #fff;
+  vertical-align: middle;
+}
+
+.extra_wrap p {
+  float: right;
+}
+
+.login_btn,
+.logout_btn {
+  border: 0;
+  border-radius: 5px;
+  font-weight: 500;
+  width: 372px;
+  height: 48px;
+  line-height: 46px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  background-color: #bccdee;
+  margin: 15px 0;
+}
+.logout_btn{
+  display: none;
+}
+.login_btn.active,
+.logout_btn {
+  background: linear-gradient(#6f97e5, #527ed9);
+  box-shadow: inset 0 1px 2px #7ea1e8;
+  color: #fff;
+  text-shadow: #4f70b3 0 -1px 0;
+}
+
+.other_wrap {
+  padding: 10px 0 20px;
+  border-bottom: 1px solid #dadada;
+}
+.other_wrap img{
+  vertical-align: middle;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.other_wrap span{
+  float: right;
+  cursor: pointer;
+}
+.pact_wrap{
+  text-align: center;
+  margin-top: 30px;
+}
+.copy_wrap{
+  margin: 100px auto 0;
+  text-align: center;
+}
+.copy_wrap p{
+  margin-bottom: 10px;
+}

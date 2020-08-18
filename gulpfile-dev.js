@@ -21,11 +21,10 @@ task('img', async () => {
 
 // 处理css
 task('style', async () => {
-    src('./style/*.css')
+    src('./style/*.*')
         .pipe(dest('./dist/style'))
         .pipe(load.connect.reload())
 })
-
 // 处理js
 task('script', async () => {
     src('./script/*.js')
@@ -39,7 +38,12 @@ task('html', async () => {
         .pipe(dest('./dist/html'))
         .pipe(load.connect.reload())
 })
-
+// 处理html
+task('json', async () => {
+    src('./data/*.json')
+        .pipe(dest('./dist/data'))
+        .pipe(load.connect.reload())
+})
 // 监听文件变化
 task('watch', async () => {
     watch('./img/*.*', series('img'));
@@ -58,4 +62,4 @@ task('connect', async () => {
 })
 
 // 构建开发包
-task('dev', series('delDist', 'img', 'style', 'script', 'html', 'connect', 'watch'))
+task('dev', series('delDist', 'img', 'style', 'script', 'html','json','connect', 'watch'))

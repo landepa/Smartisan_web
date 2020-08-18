@@ -2,7 +2,7 @@
 #a
 
 readme.md
-
+gulpfile-build.js
 # 但lib.a 除外
 #!lib.a
 
@@ -13,7 +13,7 @@ readme.md
 # build/
 
 node_modules/
-dist/
+
 
 # 会忽略 doc/notes.txt 但不包括 doc/server/arch.txt
 #doc/.txt

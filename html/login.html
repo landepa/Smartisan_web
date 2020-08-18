@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="http://static.smartisanos.cn/common/img/favicon.ico">
+  <title>用户登录</title>
+  <link rel="stylesheet" href="../style/reset.css">
+  <link rel="stylesheet" href="../style/login.css">
+</head>
+
+<body>
+  <div class="login_bg">
+    <div class="login_wrap">
+      <h1>
+        <img src="../img/login_logo.png" alt="">
+        使用Smartisan ID 登录官网
+      </h1>
+      <div class="form_wrap">
+        <form action="">
+          <!-- 国家和地区 -->
+          <div class="local_wrap line">
+            <div class="input_l">
+              <img src="../img/login_local.png" alt="">
+            </div>
+            <div class="input_r">
+              <span>国家和地区</span>
+              <select name="" id="">
+                <option value="中国"> 中国 </option>
+                <option value="中国">中国</option>
+                <option value="中国">中国</option>
+                <option value="中国">中国</option>
+                <option value="中国">中国</option>
+              </select>
+            </div>
+          </div>
+          <!-- 手机号 -->
+          <div class="phone_wrap line">
+            <div class="input_l">
+              <img src="../img/line2.png" alt="">
+            </div>
+            <div class="input_r">
+              <span>+86</span>
+              <input class="phone_input" type="text" placeholder="手机号">
+            </div>
+          </div>
+          <!-- 密码 -->
+          <div class="password_wrap line">
+            <div class="input_l">
+              <img src="../img/line3.png" alt="">
+            </div>
+            <div class="input_r">
+              <input class="pass_input" type="text" placeholder="密码">
+            </div>
+          </div>
+          <!-- 自动登录 -->
+          <div class="extra_wrap">
+            <label for="">
+              <input class="auto_input" type="checkbox" checked>
+              自动登录
+            </label>
+            <p>
+              <a href="">短信验证码登录</a>
+              <span>|</span>
+              <a href="">忘记密码?</a>
+            </p>
+          </div>
+          <!--  -->
+          <input class="login_btn" type="submit" value="登录" disabled>
+          <input class="logout_btn" type="button" value="退出登录">
+        </form>
+      </div>
+      <!-- 其它登录方式 -->
+      <div class="other_wrap">
+        <p>
+          其他账号登录：
+          <img src="../img/icon1.png" alt="">
+          <img src="../img/icon2.png" alt="">
+          <img src="../img/icon3.png" alt="">
+          <img src="../img/icon4.png" alt="">
+          <span>普通登录 &gt;</span>
+        </p>
+      </div>
+      <div class="pact_wrap">
+        登录代表你已同意 <a href="">用户协议</a> 和 <a href="">隐私政策</a>
+      </div>
+    </div>
+    <div class="copy_wrap">
+      <p>Copyright &copy; 2020 smartisan.com 版权所有</p>
+      <a href="">京 ICP 备 18020659 号 - 2</a>
+    </div>
+  </div>
+
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+  <script src="../script/login.js"></script>
+</body>
+
+</html>
