@@ -1,7 +1,6 @@
 # 忽略所有 .a 结尾的文件
 #a
 
-readme.md
 gulpfile-build.js
 # 但lib.a 除外
 #!lib.a
