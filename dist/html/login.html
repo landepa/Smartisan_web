@@ -15,13 +15,15 @@
   <div class="login_bg">
     <div class="login_wrap">
       <h1>
-        <img src="../img/login_logo.png" alt="">
-        使用Smartisan ID 登录官网
+        <a href="./index.html">
+          <img src="../img/login_logo.png" alt="">
+        </a>
+        使用 Smartisan ID 登录官网
       </h1>
       <div class="form_wrap">
         <form action="">
           <!-- 国家和地区 -->
-          <div class="local_wrap line">
+          <!-- <div class="local_wrap line">
             <div class="input_l">
               <img src="../img/login_local.png" alt="">
             </div>
@@ -35,24 +37,25 @@
                 <option value="中国">中国</option>
               </select>
             </div>
-          </div>
+          </div> -->
           <!-- 手机号 -->
           <div class="phone_wrap line">
             <div class="input_l">
               <img src="../img/line2.png" alt="">
             </div>
             <div class="input_r">
-              <span>+86</span>
-              <input class="phone_input" type="text" placeholder="手机号">
+              <input class="phone_input" type="text" placeholder="手机号 / 邮箱">
+              <span class="phone_err">手机号 / 邮箱格式错误</span>
             </div>
           </div>
           <!-- 密码 -->
           <div class="password_wrap line">
-            <div class="input_l">
+            <div class="input_l ">
               <img src="../img/line3.png" alt="">
             </div>
-            <div class="input_r">
+            <div class="input_r ">
               <input class="pass_input" type="text" placeholder="密码">
+              <span class="pass_err">密码需包含数字字母下划线</span>
             </div>
           </div>
           <!-- 自动登录 -->
@@ -68,7 +71,7 @@
             </p>
           </div>
           <!--  -->
-          <input class="login_btn" type="submit" value="登录" disabled>
+          <input class="login_btn active" type="button" value="登录">
           <input class="logout_btn" type="button" value="退出登录">
         </form>
       </div>
@@ -80,7 +83,7 @@
           <img src="../img/icon2.png" alt="">
           <img src="../img/icon3.png" alt="">
           <img src="../img/icon4.png" alt="">
-          <span>普通登录 &gt;</span>
+          <!-- <span>普通登录 &gt;</span> -->
         </p>
       </div>
       <div class="pact_wrap">

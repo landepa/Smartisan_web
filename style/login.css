@@ -32,9 +32,11 @@ body {
 
 .login_wrap h1 {
   padding: 60px 0 20px;
-  color: #333;
+  color: #151515;
   font-size: 18px;
   text-align: center;
+  font-family: "微软雅黑";
+  /* font-weight: 600; */
 }
 
 .login_wrap h1 img {
@@ -46,17 +48,19 @@ body {
   /* background-color: #0f0; */
 }
 
-.form_wrap .line {
+.form_wrap .line{
   box-sizing: border-box;
-  width: 370px;
+  width: 385px;
   height: 48px;
   border: 1px solid #dfdfdf;
   border-radius: 6px;
-  font-size: 16px;
+  font-size: 0;
   line-height: 46px;
   margin-top: 15px;
 }
-
+.form_wrap .line.erro_bg{
+  border-color: #d16d62;
+}
 .input_l {
   float: left;
   width: 46px;
@@ -74,27 +78,44 @@ body {
   height: 44px;
   line-height: 44px;
   vertical-align: middle;
-  /* text-indent: 1em; */
   border: 0;
   outline: none;
   background-color: rgba(0, 0, 0, 0);
   color: #333;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .line input:focus {
   border: 0;
 }
-
-.input_r select {
-  float: right;
-  margin-right: 10px;
-  margin-top: 14px;
-  color: #999;
-  border: 0;
-  font-size: 14px;
+.line:focus{
+  border-color: #d16d62;
 }
+.input_r {
+  /* background-color: #0f0; */
+  position: relative;
+}
+.input_r span{
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  margin-right: 10px;
+  background-color: #d16d62;
+  color: #fff;
+  font-size: 10px;
+  width: fit-content;
+  padding: 0 5px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  border-radius: 5px;
+}
+/* erro show */
 
+.input_r .erro{
+  display: block;
+}
 a {
   color: #5079d9;
   text-decoration: none;

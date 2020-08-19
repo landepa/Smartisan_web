@@ -165,8 +165,23 @@ body {
 .header_slider .head_avatar {
     margin-right: 20px;
     background: url("../img/head_avatar_cart.png") no-repeat 1px 2px/180%;
+    position: relative;
 }
-
+.head_avatar span{
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: -25px;
+    z-index: 999;
+    font-size: 14px;
+    color: #666;
+    width: 80px;
+    text-align: center;
+    padding: 3px 0;
+    background-color: #fff;
+    border: 1px solid #cdcdcd;
+    border-radius: 5px;
+}
 .header_slider .head_cart {
     background: url("../img/head_avatar_cart.png") no-repeat 0 -17px;
     background-size: 180%;

@@ -10,17 +10,34 @@
     var $title_lis = $('.title_nav_list li a');
     var $tit_sec_container = $('.title_nav_sec_container');
     var $title_wrap = $('.title_wrap');
+    var $head_avatar = $('.head_avatar');
+    var $is_login = $('.head_avatar span');
 
+    // var user = localStorage.getItem('user')
 // header操作 
     /**
  * @description: 商城app下载 二维码 显示与隐藏
  */
-    $app_tit.mouseenter(() => {
-        console.log( 11 );
+    $app_tit.hover(() => {
+        $app_wrap.toggle()
+    },() => {
         $app_wrap.toggle()
     })
-    $app_tit.mouseleave(() => {
-        $app_wrap.toggle()
+        /**
+     * @description: 购物车的隐藏与显示
+     * @param {type} 
+     * @return {type} 
+     */
+    $head_avatar.hover(() => {
+        $is_login.show()
+        if(localStorage.getItem('user')){
+            console.log( 22 );
+            $is_login.text('您已登录')
+        } else{
+            $is_login.text('您未登录')
+        }
+    },() => {
+        $is_login.hide()
     })
 
     /**
@@ -28,12 +45,12 @@
      * @param {type} 
      * @return {type} 
      */
-    $head_cart.mouseenter(() => {
+    $head_cart.hover(() => {
+        $head_cart_empty.toggle()
+    },() => {
         $head_cart_empty.toggle()
     })
-    $head_cart.mouseleave(() => {
-        $head_cart_empty.toggle()
-    })
+    
 
 // 导航栏操作
 
