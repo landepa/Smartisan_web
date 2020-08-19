@@ -46,10 +46,11 @@
     border-radius: 5px;
 }
 /* 点击状态 */
-.mini_list .mini_img:hover{
+.mini_list .mini_img.hover{
     padding: 10px;
     border: 3px solid #f0f0f0;
 }
+
 .detail_l .normal_wrap{
     background-color: #ddd;
     width: 400px;
@@ -60,10 +61,22 @@
     margin-left: 30px;
     position: relative;
 }
+/* 展示图 */
 .normal_wrap img{
     display: block;
     width: 400px;
     height: 400px;
+    
+}
+.max_wrap img{
+    width: 800px;
+    height: 800px;
+    display: block;
+}
+.pos_img{
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 .normal_wrap:hover{
     border: 2px solid #ddd;
@@ -73,10 +86,12 @@
     position: absolute;
     left: 0;
     top: 0;
+    z-index: 99;
     width: 250px;
     height: 250px;
     background-color: rgba(0,0,0,.1);
-    border-radius: 8px;
+    border-radius: 6px; 
+    cursor: pointer;
 }
 .max_wrap{
     display: none;
@@ -84,17 +99,18 @@
     left: 510px;
     /* top: 10px; */
     z-index: 99;
-    background-color: #0f0;
     width: 500px;
     height: 500px;
     border: 2px solid #f0f0f0;
     overflow: hidden;
     border-radius: 7px;
 }
-.max_wrap img{
+.max_img{
     width: 800px;
     height: 800px;
-    display: block;
+    position: relative;
+    left: 0;
+    top: 0;
 }
 /* 右侧详情 */
 .detail_wrap .detail_r{
@@ -230,17 +246,6 @@ button{
 .detail_direction div{
     color: #999999;
 }
-
-
-
-
-
-
-
-
-
-
-
 /* 产品信息 */
 .info_wrap{
     width: 100%;

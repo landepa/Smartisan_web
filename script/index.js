@@ -22,19 +22,32 @@ $(function () {//ready
      * @param {type} 
      * @return {type} done
      */
-    $.get('../data/hotlist.json', function(json) {
+    $.get('../data/goodlist.json', function (json) {
         console.log(json);
         console.log(11);
         var hotlist = '';
         $.each(json, function (index, item) {
-            hotlist += `<li>
-                                <a href=""></a>
-                                <img src="${item.imgUrl}" alt="">
-                                <h3>${item.title}</h3>
-                                <span>${item.description}</span>
-                                <p><em>${item.priceNow}</em><del>${item.pricePast}</del></p>
-                                <b>${item.label}</b>
-                            </li>`;
+            if (index < 8) {
+                if(item.label){
+                    hotlist += `<li good_id="${item.id}">
+                    <a href="./goodDetail.html"></a>
+                    <img src="${item.imgUrl}" alt="">
+                    <h3>${item.title}</h3>
+                    <span>${item.description}</span>
+                    <p><em>${item.priceNow}</em><del>${item.pricePast}</del></p>
+                    <b>${item.label}</b>
+                </li>`;
+                } else{
+                    hotlist += `<li good_id="${item.id}">
+                    <a href="./goodDetail.html"></a>
+                    <img src="${item.imgUrl}" alt="">
+                    <h3>${item.title}</h3>
+                    <span>${item.description}</span>
+                    <p><em>${item.priceNow}</em><del>${item.pricePast}</del></p>
+                </li>`;
+                }
+
+            }
         })
         $('.hot_list').append(hotlist);
         $('.hot_list li').hover(function () {
@@ -45,6 +58,12 @@ $(function () {//ready
             let idx = $(this).index();
             let description = json[idx].description;
             $(this).find('span').css('color', '#666').text(description);
+        })
+
+        $('.hot_list').on('click','li',function(){
+            localStorage.setItem('good_id',$(this).attr('good_id'))
+            console.log( $(this).attr('good_id') );
+            console.log( 222 );
         })
     }, 'json');
 
@@ -62,6 +81,7 @@ $(function () {//ready
         // 如果需要分页器
         pagination: {
             el: '.swiper-pagination',
+            clickable: true
         },
         autoplay: true, //等同于以下设置
         /*autoplay: {
@@ -75,6 +95,13 @@ $(function () {//ready
             bulletActiveClass: 'my-bullet-active',
         },
     })
+    // TODO swiper dots
+    $(".swiper-pagination-bullet").hover(function(){
+        $(this).click();
+        $(this).css('background','#ffffff')
+    },function(){
+        mySwiper.autoplay.start(); 
+    })
 
     /**
      * @description: 热门商品列表 切换
@@ -87,7 +114,7 @@ $(function () {//ready
             if (!$(this).is('.hot_negative')) {
                 return false;
             }
-            $('.hot_list_wrap').animate({scrollLeft:'0'});
+            $('.hot_list_wrap').animate({ scrollLeft: '0' });
             $(this).removeClass('hot_negative');
             $('.hotNext').addClass('hot_negative');
         }
@@ -98,16 +125,15 @@ $(function () {//ready
             if (!$(this).is('.hot_negative')) {
                 return false;
             }
-            $('.hot_list_wrap').animate({scrollLeft:'1220px'});
+            $('.hot_list_wrap').animate({ scrollLeft: '1220px' });
             $(this).removeClass('hot_negative');
             $('.hotPrev').addClass('hot_negative');
         }
     )
-    if(localStorage.getItem('user')){
+    if (localStorage.getItem('user')) {
         var user = localStorage.getItem('user');
-
         // alert('欢迎您，'+ user)
-        localStorage.setItem('flag','1')
+        localStorage.setItem('flag', '1')
         user = true;
     }
 

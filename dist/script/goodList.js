@@ -28,7 +28,7 @@ $.get('../data/goodlist.json',function(json){
     var goodlist = '';
     $.each(json, function (index, item) {
         if(item.label){
-            goodlist += `<li class="good_item">
+            goodlist += `<li good_id="${item.id}" class="good_item">
                             <a good_id="${item.id}" href="./goodDetail.html"></a>
                             <img src="${item.imgUrl}" alt="">
                             <h3>${item.title}</h3>
@@ -55,6 +55,10 @@ $.get('../data/goodlist.json',function(json){
         let idx = $(this).index();
         let description = json[idx].description;
         $(this).find('span').css('color', '#666').text(description);
+    })
+
+    $('.goods_list').on('click','.gooditem',function(){
+        localStorage.setItem('good_id',$(this).attr('good_id'))
     })
 },'json')
 

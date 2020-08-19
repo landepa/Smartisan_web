@@ -8,7 +8,7 @@
         "priceNow": "￥179.00",
         "pricePast": "￥249.00",
         "label": "直降",
-        "id": "005"
+        "id": "001"
     },
     {
         "imgUrl": "../img/hot1.png",
@@ -17,18 +17,17 @@
         "phrase": "品质箱包狂暑特惠",
         "priceNow": "￥149.00",
         "pricePast": "￥269.00",
-        "label": "直降",
-        "id": "006"
+        "id": "002"
     },
     {
-        "imgUrl": "../img/hot2_0.png",
+        "imgUrl": "../img/hot2.png",
         "title": "落栗T恤卡夫卡出生",
         "description": "100%纯棉",
         "phrase": "官方自营 狂暑直降",
         "priceNow": "￥166.00",
         "pricePast": "￥229.00",
         "label": "直降",
-        "id": "007"
+        "id": "003"
     },
     {
         "imgUrl": "../img/hot3.png",
@@ -37,8 +36,7 @@
         "phrase": "官方自营配件 狂暑直降",
         "priceNow": "￥119.00",
         "pricePast": "￥149.00",
-        "label": "直降",
-        "id": "008"
+        "id": "004"
     },
     {
         "imgUrl": "../img/hot3.png",
@@ -57,7 +55,6 @@
         "phrase": "官方自营配件 狂暑直降",
         "priceNow": "￥119.00",
         "pricePast": "￥149.00",
-        "label": "直降",
         "id": "002"
     },
     {
@@ -67,7 +64,7 @@
         "phrase": "官方自营配件 狂暑直降",
         "priceNow": "￥119.00",
         "pricePast": "￥149.00",
-        "label": "直降",
+        "label": "买赠",
         "id": "003"
     },
     {
@@ -77,7 +74,6 @@
         "phrase": "官方自营配件 狂暑直降",
         "priceNow": "￥119.00",
         "pricePast": "￥149.00",
-        "label": "直降",
         "id": "004"
-    },
+    }
 ]
