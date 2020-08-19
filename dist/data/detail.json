@@ -10,7 +10,12 @@
             {"img":"../img/phone_0.png"},
             {"img":"../img/phone_1.png"},
             {"img":"../img/phone_2.png"},
-            {"img":"../img/phone_3.png"}
+            {"img":"../img/phone_3.png"},
+            {"img":"../img/phone_4.png"},
+            {"img":"../img/phone_5.png"},
+            {"img":"../img/phone_6.png"},
+            {"img":"../img/phone_7.png"},
+            {"img":"../img/phone_8.png"}
         ],
         "title": "Smartisan 真无线TWS蓝牙耳机",
         "description": "智能配对 开盖即连",
@@ -26,10 +31,8 @@
             {"img":"../img/hot1_1.png"}
         ],
         "info_list":[
-            {"img":"../img/phone_0.png"},
-            {"img":"../img/phone_1.png"},
-            {"img":"../img/phone_2.png"},
-            {"img":"../img/phone_3.png"}
+            {"img":"../img/package_0.png"},
+            {"img":"../img/package_1.png"}
         ],
         "title": "地平线8号14英寸休闲文青背包",
         "description": "文艺青年首选",
@@ -44,10 +47,8 @@
             {"img":"../img/hot2_1.png"}
         ],
         "info_list":[
-            {"img":"../img/phone_0.png"},
-            {"img":"../img/phone_1.png"},
-            {"img":"../img/phone_2.png"},
-            {"img":"../img/phone_3.png"}
+            {"img":"../img/cloth_0.png"},
+            {"img":"../img/cloth_1.png"}
         ],
         "title": "落栗T恤卡夫卡出生",
         "description": "100%纯棉",
@@ -66,10 +67,8 @@
             {"img":"../img/hot3_4.png"}
         ],
         "info_list":[
-            {"img":"../img/phone_0.png"},
-            {"img":"../img/phone_1.png"},
-            {"img":"../img/phone_2.png"},
-            {"img":"../img/phone_3.png"}
+            {"img":"../img/light_0.png"},
+            {"img":"../img/light_1.png"}
         ],
         "title": "颂凡灭蚊灯",
         "description": "外出携带也能用",
